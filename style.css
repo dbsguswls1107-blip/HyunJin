@@ -628,8 +628,8 @@ ul {
 }
 /* 프로필 사진 박스 (세로 비율 사각형으로 설정) */
 .profile-avatar {
-  width: 140px;          /* 박스 가로 크기 */
-  height: 180px;         /* 세로 사진에 맞춘 높이 */
+  width: 200px;          /* 박스 가로 크기 */
+  height: 240px;         /* 세로 사진에 맞춘 높이 */
   border-radius: 12px;   /* 모서리가 살짝 둥근 사각형 (완전 직각은 0px) */
   overflow: hidden;
   background-color: #1a1a1a;
