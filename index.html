@@ -14,7 +14,7 @@
         rel="stylesheet">
 
     <!-- CSS 연결 -->
-     <!-- Lightgallery CSS (이미지 확대 팝업 라이브러리) -->
+    <!-- Lightgallery CSS (이미지 확대 팝업 라이브러리) -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.2/css/lightgallery-bundle.min.css" />
 
     <style>
@@ -90,31 +90,25 @@
         </section>
 
         <!-- ==========================================================================
-           4. ABOUT ME 섹션 (프로필 및 보유 스킬)
+           4. ABOUT ME 섹션 (프로필, 보유 스킬, 학력/경력)
            ========================================================================== -->
         <section id="about" class="section">
             <div class="container">
                 <div class="about-grid">
                     <div class="about-profile-card">
-                        <!-- 📍 index.html 수정 부분 -->
-                            <div class="profile-avatar">
-                            <!-- 파일명(profile.jpg)을 준비하신 사진 파일 이름으로 적어주세요 -->
+                        <div class="profile-avatar">
                             <img src="/images/portfolio.jpg" alt="윤현진 프로필 사진">
-                            </div>
+                        </div>
                         <h3>윤현진</h3>
                         <p class="role">Video Creator</p>
                     </div>
                     <div class="about-content">
-                        <p></p>
-                        <p></p>
-                        <p></p>
                         <h3>기획부터 촬영, 편집까지 가능한 영상 제작자입니다</h3>
                         <p>
                             기획의 의도가 편집의 템포로 고스란히 이어지며, 완성도 높은 영상을 제작 합니다.
                         </p>
                         <div class="skills-wrapper">
-                            <h4 style="margin-bottom: 10px; color: var(--text-secondary); font-size: 0.9rem;">MAIN SKILL
-                            </h4>
+                            <h4 style="margin-bottom: 10px; color: var(--text-secondary); font-size: 0.9rem;">MAIN SKILL</h4>
                             <div class="skill-tags">
                                 <span class="tag">Adobe Premiere Pro</span>
                                 <span class="tag">After Effects</span>
@@ -129,6 +123,90 @@
                         </div>
                     </div>
                 </div>
+
+                <!-- 📍 학력/경력/자격증/교육 이력 섹션 (ABOUT 박스 폭에 맞춰 추가) -->
+                <div class="resume-container">
+                    <div class="resume-grid">
+                        
+                        <!-- 1. 학력 사항 -->
+                        <div class="resume-card">
+                            <div class="card-header">
+                                <span class="icon">🎓</span>
+                                <h4 class="resume-title">학력 사항</h4>
+                            </div>
+                            <ul class="resume-list">
+                                <li>
+                                    <span class="date">2019.03 - 2025.02</span>
+                                    <strong class="title">대림대학교</strong>
+                                    <p class="desc">전자통신과 졸업</p>
+                                </li>
+                                <li>
+                                    <span class="date">2016.03 - 2019.02</span>
+                                    <strong class="title">용호고등학교</strong>
+                                    <p class="desc">졸업</p>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <!-- 2. 경력 사항 -->
+                        <div class="resume-card">
+                            <div class="card-header">
+                                <span class="icon">🎬</span>
+                                <h4 class="resume-title">경력 사항</h4>
+                            </div>
+                            <ul class="resume-list">
+                                <li>
+                                    <span class="date">2025.09 - 2025.12</span>
+                                    <strong class="title">MBN 영상취재팀</strong>
+                                    <p class="desc">VJ</p>
+                                </li>
+                                <li>
+                                    <span class="date">2021.08 - 2023.01</span>
+                                    <strong class="title">JTBC 영상취재팀</strong>
+                                    <p class="desc">촬영보조</p>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <!-- 3. 자격증 -->
+                        <div class="resume-card">
+                            <div class="card-header">
+                                <span class="icon">📜</span>
+                                <h4 class="resume-title">자격증</h4>
+                            </div>
+                            <ul class="resume-list cert-list">
+                                <li>
+                                    <strong class="title">자동차운전면허증</strong>
+                                    <span class="badge">1종 보통</span>
+                                </li>
+                                <li>
+                                    <strong class="title">초경량드론조종자격증</strong>
+                                    <span class="badge">4증</span>
+                                </li>
+                                <li>
+                                    <strong class="title">멀티미디어콘텐츠제작전문가</strong>
+                                    <span class="badge status-pending">취득 예정</span>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <!-- 4. 교육 이력 -->
+                        <div class="resume-card">
+                            <div class="card-header">
+                                <span class="icon">💻</span>
+                                <h4 class="resume-title">교육 이력</h4>
+                            </div>
+                            <ul class="resume-list">
+                                <li>
+                                    <span class="date">2026.03 - 2026.08</span>
+                                    <strong class="title">멀티미디어콘텐츠제작전문가 취득 과정</strong>
+                                    <p class="desc">안산 그린컴퓨터아카데미</p>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
             </div>
         </section>
 
@@ -141,7 +219,7 @@
                 <p class="section-desc">주요 제작 및 편집 영상 작업물입니다.</p>
 
                 <div class="video-grid">
-                    <!-- 메인 대표 영상 (2컬럼 전체 차지) -->
+                    <!-- 메인 대표 영상 -->
                     <article class="video-card feature-main">
                         <div class="video-wrapper">
                             <iframe width="560" height="315"
@@ -153,8 +231,7 @@
                         <div class="video-info">
                             <span class="category">BRANDED FILM / CINEMATIC</span>
                             <h3 class="video-title">공익 광고 제작(페르소나의 가면, 가면증후군) - 윤현진</h3>
-                            <p>직접 연출·촬영·편집한 단편 프로젝트로, 빠른 템포 완급 조절과 몰입감 넘치는 사운드를 통해 현대인이 겪는 가면증후군의 불안함과 페르소나
-                            <p>너머의 진짜 자아를 감각적인 비주얼로 담아냈습니다.</p>
+                            <p>직접 연출·촬영·편집한 단편 프로젝트로, 빠른 템포 완급 조절과 몰입감 넘치는 사운드를 통해 현대인이 겪는 가면증후군의 불안함과 페르소나 너머의 진짜 자아를 감각적인 비주얼로 담아냈습니다.</p>
                         </div>
                     </article>
 
@@ -170,7 +247,8 @@
                             <p>디테일한 건물 일러스트 레이어링과 감각적인 앵글 전환을 통해 공간의 리듬감을 시각화한 2D 모션 그래픽 아트워크입니다.</p>
                         </div>
                     </article>
-                    <!-- 서브 영상 1 -->
+
+                    <!-- 서브 영상 2 -->
                     <article class="video-card">
                         <div class="video-wrapper">
                             <iframe width="560" height="315"
@@ -182,11 +260,11 @@
                         <div class="video-info">
                             <span class="category">Team Project</span>
                             <h3 class="video-title">수원화성 스탬프투어 팀작 - 윤현진</h3>
-                            <p>수원화성 스탬프투어의 현장감과 활기찬 분위기를 담은 팀 프로젝트 홍보 영상입니다.<p> 팀 내에서 메인 촬영을 전담하였으며, 컨셉을 직관적으로 보여주는 메인 타이틀 디자인 및 모션 그래픽을 제작했습니다.</p>
+                            <p>수원화성 스탬프투어의 현장감과 활기찬 분위기를 담은 팀 프로젝트 홍보 영상입니다. 팀 내에서 메인 촬영을 전담하였으며, 컨셉을 직관적으로 보여주는 메인 타이틀 디자인 및 모션 그래픽을 제작했습니다.</p>
                         </div>
                     </article>
 
-                    <!-- 서브 영상 2 -->
+                    <!-- 서브 영상 3 -->
                     <article class="video-card">
                         <div class="video-wrapper">
                             <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Sub Video 2"
@@ -223,16 +301,12 @@
                     <!-- 갤러리 카드 2 -->
                     <article class="gallery-card" data-src="/images/car.png">
                         <div class="gallery-img-holder">
-                            <img src="/images/car.png"
-                                alt="포스터 아트워크">
+                            <img src="/images/car.png" alt="포스터 아트워크">
                             <div class="overlay"><span>VIEW DETAIL</span></div>
                         </div>
                         <div class="gallery-info">
                             <h4>Mercedes-AMG GT C190 아트웍</h4>
-                            <p>차량을 일러스트로 그리고 포토샵으로 디자인 한 작품 입니다 </p>
-                        </div>
-                    </article>
-                </div>
+                            <p>차량을 일러스트로 그리고 포토샵으로 디자인 한 작품 입니다</p>
                         </div>
                     </article>
                 </div>
@@ -250,7 +324,7 @@
                     <div class="contact-details">
                         <div class="contact-item">
                             <span class="label">EMAIL</span>
-                            <a href="mailto:editor@example.com" class="value">jin001107@naver.com</a>
+                            <a href="mailto:jin001107@naver.com" class="value">jin001107@naver.com</a>
                         </div>
                         <div class="contact-item">
                             <span class="label">TEL</span>
@@ -275,7 +349,8 @@
             <p class="subtext">Designed for Video Editors & Visual Storytellers Portfolio.</p>
         </div>
     </footer>
-<!-- Lightgallery JS (이미지 확대 기능 실행) -->
+
+    <!-- Lightgallery JS (이미지 확대 기능 실행) -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.2/lightgallery.min.js"></script>
     <script>
         window.addEventListener('DOMContentLoaded', function() {
