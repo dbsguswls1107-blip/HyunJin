@@ -641,3 +641,156 @@ ul {
   height: 100%;
   object-fit: contain;   /* 사진 원본 전체가 잘림 없이 잘 나오게 설정 */
 }
+/* ==========================================================================
+   RESUME & HISTORY CARD DESIGN (상단 박스와 폭 맞춤)
+   ========================================================================== */
+.resume-container {
+/* 1. 상단 프로필 박스와 하단 이력서 박스 너비를 일치시킵니다 */
+.about-grid,
+.resume-container {
+    width: 100%;
+    max-width: 100%; /* 만약 max-width가 다르게 설정되어 있다면 동일하게 지정 */
+    box-sizing: border-box;
+}
+
+/* 2. 하단 이력서 그리드 설정 (2개씩 정렬 및 여백) */
+.resume-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2열 배치 */
+    gap: 20px; /* 카드 간 간격 */
+    width: 100%;
+    margin-top: 30px; /* 상단 프로필 박스와의 간격 */
+}
+
+/* 모바일 화면 대응 (선택 사항) */
+@media (max-width: 768px) {
+    .resume-grid {
+        grid-template-columns: 1fr; /* 모바일에서는 1열로 세로 정렬 */
+    }
+}
+
+/* 2열 2행(2x2) 레이아웃 설정 */
+.resume-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 무조건 2개씩 배치 */
+    gap: 20px;
+}
+
+/* 모바일 화면(600px 이하)에서만 1열로 세로 정렬 */
+@media (max-width: 600px) {
+    .resume-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.resume-card {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 16px;
+    padding: 24px;
+    backdrop-filter: blur(10px);
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.resume-card:hover {
+    border-color: rgba(255, 255, 255, 0.25);
+    transform: translateY(-4px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3);
+}
+
+.card-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.card-header .icon {
+    font-size: 1.2rem;
+}
+
+.resume-title {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #ffffff;
+    margin: 0;
+    letter-spacing: -0.02em;
+}
+
+.resume-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.resume-list li {
+    position: relative;
+    padding-left: 16px;
+    margin-bottom: 18px;
+}
+
+.resume-list li:last-child {
+    margin-bottom: 0;
+}
+
+.resume-list li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 6px;
+    width: 4px;
+    height: 4px;
+    background-color: var(--accent-color, #00f0ff);
+    border-radius: 50%;
+    box-shadow: 0 0 8px var(--accent-color, #00f0ff);
+}
+
+.resume-list .date {
+    display: block;
+    font-size: 0.8rem;
+    color: #888888;
+    font-family: 'Fira Code', monospace;
+    margin-bottom: 4px;
+}
+
+.resume-list .title {
+    display: block;
+    font-size: 0.95rem;
+    color: #f0f0f0;
+    font-weight: 600;
+}
+
+.resume-list .desc {
+    font-size: 0.85rem;
+    color: #aaaaaa;
+    margin: 3px 0 0 0;
+}
+
+.cert-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 0 !important;
+}
+
+.cert-list li::before {
+    display: none;
+}
+
+.badge {
+    font-size: 0.75rem;
+    font-family: 'Fira Code', monospace;
+    padding: 4px 10px;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.08);
+    color: #cccccc;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.badge.status-pending {
+    background: rgba(255, 193, 7, 0.12);
+    color: #ffc107;
+    border-color: rgba(255, 193, 7, 0.3);
+}
