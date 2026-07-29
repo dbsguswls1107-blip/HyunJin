@@ -794,3 +794,17 @@ ul {
     color: #ffc107;
     border-color: rgba(255, 193, 7, 0.3);
 }
+/* 영상 카드가 들어있는 컨테이너를 가로 2열 배치로 지정 */
+.video-grid {
+    display: grid !important;
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 30px !important;
+    width: 100%;
+}
+
+/* 모바일 화면(768px 이하)에서는 자동으로 세로 1열 배치 */
+@media (max-width: 768px) {
+    .video-grid {
+        grid-template-columns: 1fr !important;
+    }
+}
